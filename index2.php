@@ -41,8 +41,8 @@
 					More
 				</a>
 				<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-					<li><a class="dropdown-item" href="#">User Registration</a></li>
-					<li><a class="dropdown-item" href="#">Admin Login</a></li>
+					<li><a class="dropdown-item" href="user-reg.php">User Registration</a></li>
+					<li><a class="dropdown-item" href="admin-login.php">Admin Login</a></li>
 					
 				</ul>
 				</li>
@@ -78,8 +78,8 @@
 				
 			<form action="/invoiceSystem/index2.php" method="post">
 				<div class="form-group">
-						<label for="username">Username</label>
-						<input type="text" class="form-control" id="username" name="username" aria-describedby="emailHelp">
+						<label for="username">Email</label>
+						<input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp">
 						
 					</div>
 					<div class="form-group">
