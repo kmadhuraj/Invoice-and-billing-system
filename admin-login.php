@@ -75,7 +75,7 @@
 
 		<div class="container my-3">
 				
-			<form action="/invoiceSystem/index2.php" method="post">
+			<form action="admin-login.php" method="post">
 				<div class="form-group">
 						<label for="username">Email</label>
 						<input type="text" class="form-control" id="username" name="username" aria-describedby="emailHelp">
