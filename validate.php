@@ -1,5 +1,11 @@
 <?php
 
+include "connection.php";
+?>
+
+
+<?php
+
 
 	$login = false;
 	$showError = false;
@@ -14,8 +20,8 @@
     $sql = "Select * from Adminlogin where username= '$username' AND password='$password'";
     $result = mysqli_query($conn, $sql);
 
-    echo($sql);
-    die();
+    // echo($sql);
+    // die();
 	
     $num = mysqli_num_rows($result);
 	
