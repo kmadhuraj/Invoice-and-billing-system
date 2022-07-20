@@ -18,15 +18,15 @@
 			
             <nav class="navbar navbar-expand-lg bg-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="/invoiceSystem/index2.php">Admin Login</a>
+                <!-- <a class="navbar-brand" href="/invoiceSystem/index2.php">User Login</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-                </button>
+                </button> -->
     
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active" aria-current="page" href="index2.php">Home</a>
                     </li>
     
                     
@@ -36,8 +36,8 @@
                         More
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <li><a class="dropdown-item" href="#">User Registration</a></li>
-                        <li><a class="dropdown-item" href="#">User Login</a></li>
+                        <li><a class="dropdown-item" href="user-reg.php">User Registration</a></li>
+                        <li><a class="dropdown-item" href="admin-login.php">Admin Login</a></li>
                         
                     </ul>
                     </li>
