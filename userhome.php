@@ -13,7 +13,7 @@
     <title>E-BILLING AND INVOICE SYSTEM</title>
  
   </head>
-  <body>
+  <body background="images/image5.jpg"
 
   <div class="container">
   <nav class="navbar navbar-expand-lg bg-light">
@@ -51,7 +51,7 @@
   <div class="container">
  
   <div class="d-grid gap-2 col-2 mx-auto">
-    <a href="#">
+    <a href="product-list.php">
   <button class="btn btn-primary" type="button"> View Products</button>
   </a>
 
