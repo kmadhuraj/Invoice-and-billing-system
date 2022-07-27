@@ -7,14 +7,14 @@ include "connection.php";
 <?php
 
 
-	$login = false;
-	$showError = false;
+	//$login = false;
+	//$showError = false;
 	if($_SERVER["REQUEST_METHOD"] == "POST"){
     include 'connection.php';
 	
 	
     $username = $_POST['username'];
-    $password = $_POST['password']; 
+    $password = $_POST['password'];
     
      
     $sql = "Select * from Adminlogin where username= '$username' AND password='$password'";
