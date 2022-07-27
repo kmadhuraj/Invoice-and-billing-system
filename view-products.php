@@ -1,5 +1,6 @@
 <?php
 include"connection.php";
+include "nav3.php";
 ?>
 
 
@@ -9,9 +10,9 @@ include"connection.php";
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>iew Products</title>
+    <title>View Products</title>
 </head>
-<body>
+<body background="images/image5.jpg">
 
 <div class="container">
 
@@ -42,9 +43,16 @@ echo "<tr>
             <th scope='row'>". $Product_Id . "</th>
            
             <td>". $row['Product_name'] . "</td>
-            <td>". $row['Price'] . "</td>
+            <td>₹". $row['Price'] . "</td>
             <td>". $row['Stock'] . "</td>
-            <td> <button class='edit btn btn-sm btn-primary' id=".$row['Product_id'].">Edit</button> <button class='delete btn btn-sm btn-primary' id=d".$row['Product_id'].">Delete</button>  </td>
+            <td> <button class='add btn btn-sm btn-primary' id=".$row['Product_id'].">Add</button> <button class='delete btn btn-sm btn-primary' id=d".$row['Product_id'].">Delete     </button>  
+
+            
+            
+            
+     
+
+            </td>
           </tr>";
         }
 
