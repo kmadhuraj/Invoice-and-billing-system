@@ -2,9 +2,10 @@
 	<?php
 
 	include "validate.php";
+	
 ?>
 	
-	
+
 	<!doctype html>
 	<html lang="en">
 	<head>
@@ -12,14 +13,16 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>E-BILLING AND INVOICE SYSTEM</title>
-
+		 
+		
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 		  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"> -->
 		  <!-- <link href="css/supstyle.css" rel="stylesheet"> -->
 		  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">   -->
 	</head>
-	<body>
-	
+	<body background="images/image5.jpg">
+		
+
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 	
 
@@ -82,8 +85,8 @@
 				</div> ';
 				}
 
-		?>
-
+		
+?>
 		<!-- login page form -->
 
 		
@@ -109,8 +112,9 @@
 					<span class="lighting"></span>
 				</div>
 
-				<button type="submit" id="login">Login</button>
+				<button type="submit"  id="login">Login</button>
 				<div class="clearfix supporter">
+
 					<div class="pull-left remember-me">
 					<input id="rememberMe" type="checkbox">
 					<label for="rememberMe">Remember Me</label>
@@ -139,6 +143,8 @@
 
 
 	</body>
+
+
 </html>
 
 
