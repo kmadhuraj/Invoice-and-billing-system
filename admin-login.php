@@ -1,14 +1,8 @@
 <?php
-
-
-
-
 $login = false;
 $showError = false;
 if($_SERVER["REQUEST_METHOD"] == "POST"){
 include 'connection.php';
-
-
 	$username = $_POST["username"];
 	$password = $_POST["password"];
 	
@@ -33,8 +27,6 @@ include 'connection.php';
 		$showError = "Invalid Credentials";
 	}
 }
-
-
 ?>
 	
 	
@@ -56,7 +48,7 @@ include 'connection.php';
 			
 		<nav class="navbar navbar-expand-lg bg-light">
 		<div class="container-fluid">
-			<a class="navbar-brand" href="/invoiceSystem2/index2.php">User Login</a>
+			<a class="navbar-brand" href="/invoiceSystem2/user-login.php">User Login</a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 			</button>
@@ -64,7 +56,7 @@ include 'connection.php';
 			<div class="collapse navbar-collapse" id="navbarNavDropdown">
 			<ul class="navbar-nav">
 				<li class="nav-item">
-				<a class="nav-link active" aria-current="page" href="index2.php">Home</a>
+				<a class="nav-link active" aria-current="page" href="user-login.php">Home</a>
 				</li>
 
 				
@@ -74,7 +66,7 @@ include 'connection.php';
 					More
 				</a>
 				<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-					<li><a class="dropdown-item" href="user-reg.php">User Registration</a></li>
+					<li><a class="dropdown-item" href="user_regi.php">User Registration</a></li>
 					<li><a class="dropdown-item" href="admin-login.php">Admin Login</a></li>
 					
 				</ul>
@@ -87,7 +79,7 @@ include 'connection.php';
 		</nav>
 
 		<?php
-				include "invoiceSystem/nav.php";
+				
 				if($login){
 	            echo ' <div class="alert alert-success alert-dismissible fade show" role="alert">
 					<strong>Success!</strong> You are logged in

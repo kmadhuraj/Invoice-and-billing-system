@@ -1,51 +1,6 @@
-<?php
-//include "nav2.php"
-
-?>
-
 
 <?php
-// // Connecting to the Database
-// $servername = "localhost";
-// $username = "root";
-// $password = "";
-// $database = "Invoice_system";
-
-// // Create a connection
-//     $conn = mysqli_connect($servername, $username, $password, $database);
-//     // Die if connection was not successful
-//     if (!$conn){
-//         die("Sorry we failed to connect: ". mysqli_connect_error());
-//     }
-    
-
-//     $sql = "SELECT * FROM Userlogin";
-//     $result = mysqli_query($conn, $sql);
-   
-
-//     // Find the number of records returned
-//     $num = mysqli_num_rows($result);
-//     echo $num;
-//     echo " records found in the DataBase<br>";
-//     // Display the rows returned by the sql query
-//     if($num> 0){
-    
-//         // We can fetch in a better way using the while loop
-//         while($row = mysqli_fetch_assoc($result)){
-//             // echo var_dump($row);
-//             echo $row['Username'].$row['Password'];
-//             echo "<br>";
-//         }
-
-
-//     }
-
-?>
-
-
-
-<?php
-include"connection.php";
+include "connection.php";
 include "nav3.php";
 ?>
 
@@ -78,45 +33,46 @@ include "nav3.php";
 <?php
 
 
-$sql = "SELECT * FROM Userlogin";
+$sql = "SELECT * FROM userlogin";
 
 $result = mysqli_query($conn, $sql);
-$Product_Id.=0;
+$Product_Id=0;
 
 while($row = mysqli_fetch_assoc($result)){
 
 $Product_Id=$Product_Id+1;
 echo "<tr>
-            <th scope='row'>". $Product_Id . "</th>
+            <th scope='row'>". $Product_Id. "</th>
             
-            <td>". $row['Username'] . "</td>
-            <td>". $row['Password'] . "</td>
+            <td>". $row['username'] . "</td>
+            <td>". $row['password'] . "</td>
             
-         <td> <button class='add btn btn-sm btn-primary' id=".$row['Product_id'].">Add</button> <button class='delete btn btn-sm btn-primary' id=d".$row['Product_id'].">Delete     </button>  
+         <td> <button class='add btn btn-sm btn-primary' id=".$row['sl_no'].">Add</button> <button class='delete btn btn-sm btn-primary' id=d".$row['sl_no'].">Delete     </button>  
 
             
-            
-            
-     
+        
 
-            </td>
-          </tr>";
-        }
+         </td>
+         </tr>";
+ }
 
 
 
 
 $num = mysqli_num_rows($result);
-echo $num;
-echo " records found in the DataBase<br>";
-
+echo ' <div class="alert alert-success alert-dismissible fade show" role="alert">
+<strong> Users Found In Database Is : </strong> '.$num.'
+<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+  <span aria-hidden="true">&times;</span>
+</button>
+</div> ';
 if($num> 0){
    
 
     
     while($row = mysqli_fetch_assoc($result)){
        
-        echo $row['Username'] . $row['Password'];
+        echo $row['username'] . $row['password'];
         echo "<br>";
     }
 
@@ -128,6 +84,11 @@ if($num> 0){
 </table>
 </div>
     
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+			 
 </body>
 </html>
 

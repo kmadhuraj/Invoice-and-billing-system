@@ -45,7 +45,7 @@ while($row = mysqli_fetch_assoc($result)){
             <td>". $row['Product_name'] . "</td>
             <td>₹". $row['Price'] . "</td>
             <td>". $row['Stock'] . "</td>
-            <td> <button class='add btn btn-sm btn-primary' id=".$row['Product_id'].">Add</button> <button class='delete btn btn-sm btn-primary' id=d".$row['Product_id'].">Delete     </button>  
+            <td> <button class='add btn btn-sm btn-primary' id=".$row['Product_id'].">Add to Cart </button>   
 
             
             
@@ -59,13 +59,13 @@ while($row = mysqli_fetch_assoc($result)){
 
 
 
-      $num = mysqli_num_rows($result);
-       echo ' <div class="alert alert-success alert-dismissible fade show" role="alert">
-					<strong> Available Product Found In The Database Is :</strong> '.$num.'
-					<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-				</div> ';
+       $num = mysqli_num_rows($result);
+    //    echo ' <div class="alert alert-success alert-dismissible fade show" role="alert">
+	// 				<strong> Available Product Found In The Database Is :</strong> '.$num.'
+	// 				<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+	// 					<span aria-hidden="true">&times;</span>
+	// 				</button>
+	// 			</div> ';
         
 
 

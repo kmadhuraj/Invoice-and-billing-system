@@ -1,13 +1,12 @@
 <?php
-	
-	include("nav3.php");
-	session_start();
-	if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin']!=true)
-	{
-		header("location:admin-login.php");
-		exit;
+session_start();
+if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin']!=true)
+{
+	header("location:admin-login.php");
+	exit;
 
-	}
+}
+include("nav3.php");
 ?>
 
 <!doctype html>
@@ -78,7 +77,7 @@
 
 		
 		<div class="top-buttons float-right btn-group">
-			<a class="btn btn-primary float-right" href="logout.php" role="button">Logout</a>
+			<a class="btn btn-primary float-right" href="adminlogout.php" role="button">Logout</a>
 			</div> 
 		</div>
 								

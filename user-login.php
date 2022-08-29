@@ -140,7 +140,7 @@ include 'connection.php';
 			</form>
 		</div>
 		<div class="signup-wrapper text-center">
-			<a href="user-reg.php">Don't have an accout? <span class="text-primary">Create One</span></a>
+			<a href="user_regi.php">Don't have an accout? <span class="text-primary">Create One</span></a>
 		</div>
 		</div>
 
