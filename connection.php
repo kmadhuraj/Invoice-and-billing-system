@@ -1,4 +1,3 @@
-
 <?php  
 
 $sname = "localhost";
@@ -14,7 +13,4 @@ if (!$conn) {
 	
 	
 }
-
-
-
 ?>

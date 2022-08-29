@@ -1,6 +1,40 @@
 <?php
 
-	include "validate.php";
+
+
+
+$login = false;
+$showError = false;
+if($_SERVER["REQUEST_METHOD"] == "POST"){
+include 'connection.php';
+
+
+	$username = $_POST["username"];
+	$password = $_POST["password"];
+	
+	$sql = "Select * from Adminlogin where username='$username' AND password='$password'";
+	$result = mysqli_query($conn, $sql);
+
+	$num = mysqli_num_rows($result);
+
+	if ($num == 1){
+		
+			 $login = true;
+			 session_start();
+			 $_SESSION['loggedin'] = true;
+			 $_SESSION['username'] = $username;
+			header("location: adminpage.php");
+		
+		
+	}
+	
+ 
+	else{
+		$showError = "Invalid Credentials";
+	}
+}
+
+
 ?>
 	
 	
@@ -13,7 +47,7 @@
 		<title>Admin login</title>
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 	</head>
-	<body>
+	<body background="images/image5.jpg">
 	
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 	
@@ -22,7 +56,7 @@
 			
 		<nav class="navbar navbar-expand-lg bg-light">
 		<div class="container-fluid">
-			<a class="navbar-brand" href="/invoiceSystem/index2.php">User Login</a>
+			<a class="navbar-brand" href="/invoiceSystem2/index2.php">User Login</a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 			</button>

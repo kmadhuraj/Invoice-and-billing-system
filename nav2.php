@@ -18,7 +18,7 @@
 			
             <nav class="navbar navbar-expand-lg bg-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="/invoiceSystem/index2.php">Admin Login</a>
+                <a class="navbar-brand" href="/invoiceSystem2/index2.php">Admin Login</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
