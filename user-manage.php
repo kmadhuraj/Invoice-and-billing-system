@@ -12,6 +12,8 @@ include "nav3.php";
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>manage user</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
 </head>
 <body background="images/image5.jpg">
 
@@ -21,10 +23,13 @@ include "nav3.php";
 <table class="table">
   <thead>
     <tr>
-      <!-- <th scope="col">Sl No. </th>  -->
+     
       <th scope="col">Sl No</th>
       <th scope="col">Username</th>
+      <th scope="col">Email</th>
       <th scope="col">Password</th>
+      
+
       
     </tr>
   </thead>
@@ -41,19 +46,19 @@ $Product_Id=0;
 while($row = mysqli_fetch_assoc($result)){
 
 $Product_Id=$Product_Id+1;
+
 echo "<tr>
             <th scope='row'>". $Product_Id. "</th>
             
+            <td>". $row['name'] . "</td>
             <td>". $row['username'] . "</td>
             <td>". $row['password'] . "</td>
-            
-         <td> <button class='add btn btn-sm btn-primary' id=".$row['sl_no'].">Add</button> <button class='delete btn btn-sm btn-primary' id=d".$row['sl_no'].">Delete     </button>  
+            <td>  <a href='deleteuser.php? slno=$row[sl_no]'> <button >Delete </button> </td> 
 
             
-        
-
-         </td>
+      
          </tr>";
+  
  }
 
 
@@ -72,7 +77,7 @@ if($num> 0){
     
     while($row = mysqli_fetch_assoc($result)){
        
-        echo $row['username'] . $row['password'];
+        //echo $row['username'] .$row['username']. $row['password'];
         echo "<br>";
     }
 

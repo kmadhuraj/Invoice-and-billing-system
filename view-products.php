@@ -45,7 +45,7 @@ while($row = mysqli_fetch_assoc($result)){
             <td>". $row['Product_name'] . "</td>
             <td>₹". $row['Price'] . "</td>
             <td>". $row['Stock'] . "</td>
-            <td> <button class='add btn btn-sm btn-primary' id=".$row['Product_id'].">Add</button> <button class='delete btn btn-sm btn-primary' id=d".$row['Product_id'].">Delete     </button>  
+            <td>  <a href='deleteproduct.php? Pid=$row[Product_id]'> <button >Delete </button> </td> 
 
             
             

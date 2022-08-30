@@ -1,6 +1,7 @@
 <?php
 function getProducts(){
-include"connection.php";
+include "connection.php";
+
 
 $sql = "SELECT * FROM product ";
 
@@ -71,8 +72,9 @@ $sql = "SELECT * FROM product ";
 
 </head>
 <body background="images/image5.jpg">
+<?php include "nav3.php"; ?>
 
-
+<!-- 
 <div class="container">
 			
             <nav class="navbar navbar-expand-lg bg-light">
@@ -91,7 +93,7 @@ $sql = "SELECT * FROM product ";
                 </div>
             </div>
             
-            </nav>
+            </nav> -->
 
 <h1>Available Products </h1>
 <hr>

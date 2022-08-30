@@ -20,6 +20,7 @@
 
 
         <div class="container">
+        <div class="col-xs-12">   
 			
             <nav class="navbar navbar-expand-lg bg-light">
             <div class="container-fluid">
@@ -31,10 +32,18 @@
                     <a class="nav-link active" aria-current="page" href="adminpage.php">Home</a>
                     </li>
     
-                  
+                    <ul class="navbar-nav">
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="adminpage.php">Back</a>
+                    </li>
+    
     
                 </ul>
                 </div>
+
+                
+            </div>
+            
             </div>
             
             </nav>

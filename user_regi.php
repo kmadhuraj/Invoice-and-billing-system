@@ -60,7 +60,8 @@ else{
 
 <div class="container my-4">
 			
-			
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	
 		<nav class="navbar navbar-expand-lg bg-light">
 		<div class="container-fluid">
 			<a class="navbar-brand" href="/invoiceSystem2/user-login.php">User Login</a>
@@ -71,21 +72,20 @@ else{
 			<div class="collapse navbar-collapse" id="navbarNavDropdown">
 			<ul class="navbar-nav">
 				<li class="nav-item">
-				<a class="nav-link active" aria-current="page" href="index2.php">Home</a>
+				<a class="nav-link active" aria-current="page" href="user-login.php">Home</a>
 				</li>
 
-				
-						
 				<li class="nav-item dropdown">
-				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-					More
-				</a>
-				<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-					<li><a class="dropdown-item" href="user_regi.php">User Registration</a></li>
-					<li><a class="dropdown-item" href="admin-login.php">Admin Login</a></li>
-					
-				</ul>
-				</li>
+			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+				More
+			</a>
+			<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+				<li><a class="dropdown-item" href="user_regi.php">User Registration</a></li>
+				<li><a class="dropdown-item" href="admin-login.php">Admin Login</a></li>
+				
+			</ul>
+			</li>
+				
 
 			</ul>
 			</div>

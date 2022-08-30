@@ -1,5 +1,6 @@
 
 <?php
+include "nav3.php";
 $showalert = false;
 $showError = false;
 if($_SERVER["REQUEST_METHOD"] =="POST"){
@@ -73,7 +74,7 @@ else{
 </head>
 <body background="images/image5.jpg">
 
-<div class="container">
+<!-- <div class="container">
 			
             <nav class="navbar navbar-expand-lg bg-light">
             <div class="container-fluid">
@@ -84,6 +85,7 @@ else{
                     <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="adminpage.php">Home</a>
                     </li>
+
     
                   
     
@@ -91,7 +93,7 @@ else{
                 </div>
             </div>
             
-            </nav>
+            </nav> -->
 	
 
 <h2>Add Products</h2>
